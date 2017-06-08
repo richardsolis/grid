@@ -1,0 +1,37 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	display: grid;
+	grid-template-columns:150px 650px 150px;
+	grid-template-rows:150px 400px 200px;
+	grid-template-areas:
+
+	 "header header header"
+	 "nav article aside"
+	 "footer footer footer"
+
+	;
+}
+
+header{
+	grid-area:header;
+	background: red;
+}
+footer{
+	grid-area:footer;
+	background: green;
+}
+article{
+	grid-area:article;
+	background: blue;
+}
+nav{
+	grid-area:nav;
+	background: peru;
+}
+aside{
+	grid-area:aside;
+	background: yellow;
+}
